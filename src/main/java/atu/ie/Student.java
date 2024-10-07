@@ -1,23 +1,23 @@
 package atu.ie;
 
-public class App {
+public class Student {
     private String name;
     private String course;
     private String email;
 
-    public App() {
+    public Student() {
         this.name = null;
         this.course = null;
         this.email = null;
 
     }
 
-    public App(String name) {
+    public Student(String name) {
         this.name = name;
         this.course = null;
         this.email = null;
     }
-    public App(String name, String course, String email) {
+    public Student(String name, String course, String email) {
         this.name = name;
         this.course = course;
         this.email = email;
@@ -43,5 +43,14 @@ public class App {
     }
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "App{" +
+                "name='" + name + '\'' +
+                ", course='" + course + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
